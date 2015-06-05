@@ -1,0 +1,59 @@
+<html>
+<head>
+    <style>
+    body {
+        font-size: 24px;
+        font-family: sans-serif;
+    }
+    a {
+        color: purple;
+        text-decoration: none;
+    }
+    a:hover {
+        color: black;
+    }
+    ul ul {
+        display: none;
+    }
+    ul li {
+        list-style-type: none;
+    }
+    i {
+        margin-right: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="tree"></div>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="decisionTreeMaker.js"></script>
+
+    <script>
+    var a = [
+        '=Are you dead?',
+        '*You can stay home.',
+        '=Are you sick?',
+        '==Are you able to get out of bed?',
+        '*Go to work.',
+        '==Are you unable to get out of bed?',
+        '===Is it a hostage situation?',
+        '*Kill the bad guy. Go to work.',
+        '===Are you vomiting blood?',
+        '*Go to work.',
+        '=Are you well?',
+        '==Are you able to get out of bed?',
+        '*Go to work.',
+        '==Are you unable to get out of bed?',
+        '===Is it a hostage situation?',
+        '*Kill the bad guy. Go to work.',
+        '===Do you just not feel like it?',
+        '*Go to work.',
+    ];
+
+    tree(a, 'tree');
+    </script>
+
+</body>
+</html>
