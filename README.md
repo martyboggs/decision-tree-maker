@@ -1,7 +1,7 @@
 # Decision Tree Maker
 pass an array of strings and get a clickable decision tree
 
-![decision tree image](http://imgur.com/zfNQWx1)
+![decision tree image](decision-tree-maker.gif)
 
 First, create your element to which Decision Tree Maker will be added:
 
@@ -20,6 +20,21 @@ Create your array in a JS file:
 
 ```
 var a = [
+'=Are you a cowboy?',
+'==Do you have guns?',
+'*That is awesome.',
+'==Are you unarmed?',
+'*That\'s pretty cool.',
+'=Are you a scuba diver?',
+'==Have you seen a sting ray?',
+'*That\'s scary.',
+'==Have seen an octopus?',
+'*Wow, incredible.',
+'=Are you a fireman?',
+'==Have you put out > 5 fires?',
+'*That\'s pretty cool.',
+'==Have you put out > 10 fires??',
+'*That fantastic!',
 ];
 ```
 
@@ -34,24 +49,24 @@ tree(a, 'tree');
 You can use this CSS too
 
 ```
-body {
+.decision-tree-maker {
     font-size: 24px;
     font-family: sans-serif;
 }
-a {
+.decision-tree-maker a {
     color: purple;
     text-decoration: none;
 }
-a:hover {
+.decision-tree-maker a:hover {
     color: black;
 }
-ul ul {
+.decision-tree-maker ul {
     display: none;
 }
-ul li {
+.decision-tree-maker li {
     list-style-type: none;
 }
-i {
+.decision-tree-maker i {
     margin-right: 10px;
 }
 ```
