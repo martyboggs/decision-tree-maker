@@ -1,6 +1,6 @@
 function tree(a, id) {
     var container = $('#' + id);
-    container.append('<ul></ul>');
+    container.append('<ul class="decision-tree-maker"></ul>');
     var previous = [container.find('ul')];
     var level = 1;
     for (var i = 0; i < a.length; i += 1) {
@@ -30,7 +30,7 @@ function tree(a, id) {
 }
 
 $(function () {
-    $('a').on('click', function () {
+    $('.decision-tree-maker a').on('click', function () {
         if ($(this).next('ul').css('display') === 'none') {
             $(this).next('ul').css('display', 'block');
             $(this).children().first().removeClass('fa-arrow-circle-right').addClass('fa-arrow-circle-down');

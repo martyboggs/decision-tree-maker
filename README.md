@@ -1,6 +1,8 @@
 # Decision Tree Maker
 pass an array of strings and get a clickable decision tree
 
+![decision tree image](http://imgur.com/zfNQWx1)
+
 First, create your element to which Decision Tree Maker will be added:
 
 ```
@@ -18,24 +20,6 @@ Create your array in a JS file:
 
 ```
 var a = [
-    '=Are you dead?',
-    '*You can stay home.',
-    '=Are you sick?',
-    '==Are you able to get out of bed?',
-    '*Go to work.',
-    '==Are you unable to get out of bed?',
-    '===Is it a hostage situation?',
-    '*Kill the bad guy. Go to work.',
-    '===Are you vomiting blood?',
-    '*Go to work.',
-    '=Are you well?',
-    '==Are you able to get out of bed?',
-    '*Go to work.',
-    '==Are you unable to get out of bed?',
-    '===Is it a hostage situation?',
-    '*Kill the bad guy. Go to work.',
-    '===Do you just not feel like it?',
-    '*Go to work.',
 ];
 ```
 
